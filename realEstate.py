@@ -23,45 +23,10 @@ except ImportError:
 class NaverRealEstateAPI:
     def __init__(self):
         self.cookies = {
-            'NNB': 'H72JBUL7UWSWM',
-            'NSCS': '2',
-            'ASID': 'daec443200000191558b90550000004d',
-            'ba.uuid': '5384a23d-95d1-428a-92be-4619cb1512a8',
-            'BNB_FINANCE_HOME_TOOLTIP_MYASSET': 'true',
-            'NAC': 'CArzBggxTz95',
-            '_ga': 'GA1.1.186245813.1725276141',
-            '_fbp': 'fb.1.1743593010106.557674768149567682',
-            '_ga_TC04LC8Q7L': 'GS1.1.1743595852.2.0.1743595852.60.0.0',
-            'NID_AUT': '8gNWs077cSACbUi0GGex1kmPAwm9UhPUjoQr88denDNQY7UPnZ2x/iO4uh6WZsJM',
-            'NID_JKL': '5KYk1fJ/ixz9j6Hv9XBAx4J+If9z/QqR1b+Sj3QgV+U=',
-            '_fwb': '133O9BaXDFP4BWG9HhDBvZE.1745321776322',
-            'landHomeFlashUseYn': 'Y',
-            'nhn.realestate.article.rlet_type_cd': 'A01',
-            'nhn.realestate.article.trade_type_cd': '""',
-            'realestate.beta.lastclick.cortar': '1138000000',
-            'NACT': '1',
-            'SRT30': '1747652250',
-            'SRT5': '1747652250',
-            'NID_SES': 'AAABq6k8CqfDdNPeyq1xnoW4fHxDsVqbMVK5tOEjnz+uZrZjBYWfOXqJmxtiXRzXibjBgx7pOZ80Nda9Z6WkAuG+d/QZwLhZ69VaxscEdl7EezMGLIBkxMifN/snooUN8+d5JYyJ8APRxY4FNOCF/uk05aj+tJnjXL/K1lQVlaMk/3MlmO0bqmJdPGEAzqPCG6lPaD05/QHN45H8i3VZ979xoXVSphpeEfoaAemvXfEZ7cvtWLT6ebQz8iCsi/YJmWHLvCXObkQIVee4m2UF3Rs1jMRbRyRxCi7ATO9GhQVYirg4eCjz0R/9XV7XX6D9SnCqq3hdiH9I3ORKb9j21j2G8VsEmQr7VOVbtqX+e8KtqRRsEIhpljxG2pJEpSWLKMt+Zjk+7yK0yH+7LEgyMAUAxkFucTROqK8fcTq5QmuyllJqY6ijz9A/azZlNSyVy6TtX2DbrD76OCJ4/j6IzD0icRDEW4lwN5FxPZoqhNCK006bV+SsgFdPIlxEgEVlW4GyK9foZB3N673ytp6F7GE/J5TWa6SubLcvg0+Vn8/1JaeejGgomooh5x/MjxfOMrZalQ==',
-            '_naver_usersession_': 'GGjDC1nG/89oZS7nGPtGov9G',
-            'page_uid': 'juVMrsqVN8CssBGr3p8ssssssFZ-505663',
-            'REALESTATE': 'Mon%20May%2019%202025%2019%3A57%3A49%20GMT%2B0900%20(Korean%20Standard%20Time)',
-            'BUC': '09yku-QzF8GQ5s7TrWgc3oIVbfuKDEvvDQUySMnfAfA=',
         }
 
         self.headers = {
-            'accept': '*/*',
-            'accept-language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,ja;q=0.6',
-            'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJFQUxFU1RBVEUiLCJpYXQiOjE3NDc2NTIyNjksImV4cCI6MTc0NzY2MzA2OX0.7z-0Bu1lyhdtER1V2aPojELmySJu8ssmg1Ha1lr8qrE',
-            'priority': 'u=1, i',
-            'referer': 'https://new.land.naver.com/complexes/107610?ms=37.606856,126.936368,17&a=APT:ABYG:JGC:PRE&e=RETAIL',
-            'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"macOS"',
-            'sec-fetch-dest': 'empty',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-site': 'same-origin',
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',
+
         }
     
     def search_keyword(self, keyword):
